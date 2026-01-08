@@ -31,26 +31,14 @@ features:
     details: RESTful API and webhooks for seamless integration with your existing workflow.
 ---
 
+<DcsSection id="testimonial" label="Testimonial">
+
 <div class="testimonial">
 
-> "CloudSync reduced our file management overhead by 80%. The real-time sync is a game-changer."
+> <DcsText page="home" text-key="testimonial.quote" fallback="CloudSync reduced our file management overhead by 80%. The real-time sync is a game-changer." tag="span" />
 >
-> — Jane Smith, CTO at TechCorp
+> — <DcsText page="home" text-key="testimonial.author" fallback="Jane Smith, CTO at TechCorp" tag="span" />
 
 </div>
 
-<style>
-.testimonial {
-  margin: 4rem auto;
-  max-width: 600px;
-  padding: 2rem;
-  background: var(--vp-c-bg-soft);
-  border-radius: 12px;
-  text-align: center;
-}
-.testimonial blockquote {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin: 0;
-}
-</style>
+</DcsSection>

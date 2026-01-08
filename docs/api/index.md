@@ -1,5 +1,7 @@
 # API Overview
 
+<DcsSection id="overview" label="Overview">
+
 The CloudSync API is organized around REST. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.
 
 ## Base URL
@@ -9,6 +11,10 @@ All API requests should be made to:
 ```
 https://api.cloudsync.io/v1
 ```
+
+</DcsSection>
+
+<DcsSection id="authentication" label="Authentication">
 
 ## Authentication
 
@@ -21,6 +27,10 @@ curl https://api.cloudsync.io/v1/workspaces \
 
 See [Authentication](/api/authentication) for more details.
 
+</DcsSection>
+
+<DcsSection id="request-format" label="Request Format">
+
 ## Request Format
 
 Send request bodies as JSON with the `Content-Type: application/json` header:
@@ -31,6 +41,10 @@ curl https://api.cloudsync.io/v1/files \
   -H "Content-Type: application/json" \
   -d '{"workspace": "my-project", "path": "/documents"}'
 ```
+
+</DcsSection>
+
+<DcsSection id="response-format" label="Response Format">
 
 ## Response Format
 
@@ -68,6 +82,10 @@ Use the `cursor` parameter to fetch the next page:
 curl "https://api.cloudsync.io/v1/files?cursor=eyJpZCI6MTAwfQ=="
 ```
 
+</DcsSection>
+
+<DcsSection id="error-handling" label="Error Handling">
+
 ## Error Handling
 
 Errors return appropriate HTTP status codes with a JSON body:
@@ -97,6 +115,10 @@ Errors return appropriate HTTP status codes with a JSON body:
 | `429` | Rate Limited |
 | `500` | Server Error |
 
+</DcsSection>
+
+<DcsSection id="rate-limiting" label="Rate Limiting">
+
 ## Rate Limiting
 
 API requests are limited to:
@@ -112,6 +134,10 @@ X-RateLimit-Limit: 1000
 X-RateLimit-Remaining: 999
 X-RateLimit-Reset: 1704534600
 ```
+
+</DcsSection>
+
+<DcsSection id="sdks" label="SDKs">
 
 ## SDKs
 
@@ -137,9 +163,15 @@ gem install cloudsync
 
 :::
 
+</DcsSection>
+
+<DcsSection id="api-reference" label="API Reference">
+
 ## API Reference
 
 - [Authentication](/api/authentication) - API keys and OAuth
 - [Files](/api/files) - Upload, download, and manage files
 - [Workspaces](/api/workspaces) - Create and manage workspaces
 - [Users](/api/users) - User management and permissions
+
+</DcsSection>

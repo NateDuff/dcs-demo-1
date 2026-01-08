@@ -1,0 +1,32 @@
+/* Custom styles for VitePress theme */
+
+/* Ensure sections are properly styled and don't affect layout */
+[data-section] {
+  display: contents;
+}
+
+/* Custom testimonial styling for the home page */
+.testimonial {
+  margin: 4rem auto;
+  max-width: 600px;
+  padding: 2rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Visual editor highlight styles */
+[data-section]:hover {
+  outline: 2px dashed var(--vp-c-brand-1);
+  outline-offset: 4px;
+}
+
+[data-text-key]:hover {
+  background-color: var(--vp-c-brand-soft);
+}
