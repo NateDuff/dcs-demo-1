@@ -1,0 +1,50 @@
+# .dcs/seo.yaml
+# Managed by DCS Portal - Do not edit manually
+# SEO configuration for CloudSync Docs
+
+version: 1
+lastUpdated: "2026-01-06T00:00:00Z"
+updatedBy: "initial-setup"
+
+global:
+  siteName: CloudSync Docs
+  siteUrl: https://demo-2.duffcloudservices.com
+  locale: en_US
+  defaultTitle: CloudSync Documentation
+  defaultDescription: Documentation for CloudSync - the modern cloud synchronization platform for teams.
+  titleTemplate: "%s | CloudSync Docs"
+
+  social:
+    twitter: "@cloudsync"
+    github: "cloudsync"
+
+  images:
+    logo: https://demo-2.duffcloudservices.com/logo.svg
+    ogDefault: https://demo-2.duffcloudservices.com/og-image.jpg
+
+  robots: "index, follow"
+
+  schemas:
+    - type: WebSite
+      properties:
+        name: CloudSync Documentation
+        description: Official documentation for CloudSync cloud synchronization platform.
+        url: https://demo-2.duffcloudservices.com
+
+pages:
+  home:
+    title: Cloud Sync Made Simple
+    description: The modern cloud synchronization platform for teams. Real-time collaboration, version control, and seamless integrations.
+    noTitleTemplate: true
+
+  guide:
+    title: Guide
+    description: Learn how to use CloudSync with our comprehensive guides and tutorials.
+
+  api:
+    title: API Reference
+    description: Complete API reference for CloudSync REST API. Authentication, endpoints, and examples.
+
+  changelog:
+    title: Changelog
+    description: See what's new in CloudSync. Release notes and version history.

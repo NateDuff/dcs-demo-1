@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8FAFC"/>
+  
+  <!-- Cloud shape -->
+  <ellipse cx="200" cy="120" rx="80" ry="50" fill="#DBEAFE"/>
+  <ellipse cx="150" cy="130" rx="50" ry="35" fill="#DBEAFE"/>
+  <ellipse cx="250" cy="130" rx="50" ry="35" fill="#DBEAFE"/>
+  
+  <!-- Sync arrows -->
+  <g transform="translate(200, 150)">
+    <path d="M-30 0L-10 -20V-10H30V10H-10V20L-30 0Z" fill="#3B82F6"/>
+    <path d="M30 30L10 50V40H-30V20H10V10L30 30Z" fill="#60A5FA"/>
+  </g>
+  
+  <!-- Devices -->
+  <rect x="60" y="200" width="60" height="80" rx="4" fill="#1E293B"/>
+  <rect x="65" y="205" width="50" height="65" fill="#475569"/>
+  
+  <rect x="280" y="210" width="80" height="50" rx="4" fill="#1E293B"/>
+  <rect x="285" y="215" width="70" height="35" fill="#475569"/>
+  <rect x="310" y="260" width="20" height="20" fill="#1E293B"/>
+  
+  <!-- Connection lines -->
+  <path d="M120 220 L180 170" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M280 220 L220 170" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <text x="200" y="285" text-anchor="middle" font-family="system-ui" font-size="14" fill="#64748B">Real-time sync across all devices</text>
+</svg>

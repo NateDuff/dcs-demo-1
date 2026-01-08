@@ -1,0 +1,56 @@
+# .dcs/pages.yaml
+# Page registry for DCS CMS integration
+# CloudSync Docs - SaaS Documentation Demo
+
+version: 3
+siteSlug: demo
+lastUpdated: "2026-01-08T00:00:00Z"
+generatedBy: manual-setup
+
+pages:
+  - slug: home
+    path: /
+    type: static
+    title: Home
+    deletable: false
+
+  - slug: guide
+    path: /guide
+    type: index
+    title: Guide
+    deletable: false
+
+  - slug: getting-started
+    path: /guide/getting-started
+    type: static
+    title: Getting Started
+    deletable: false
+
+  - slug: api
+    path: /api
+    type: index
+    title: API Reference
+    deletable: false
+
+  - slug: changelog
+    path: /changelog
+    type: static
+    title: Changelog
+    deletable: true
+
+  - slug: faq
+    path: /faq
+    type: static
+    title: FAQ
+    deletable: true
+
+excluded:
+  - /404
+  - /_*
+
+snapshot:
+  viewport:
+    width: 1280
+    height: 720
+  waitAfterLoad: 3000
+  captureFullPage: true

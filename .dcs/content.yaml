@@ -1,0 +1,58 @@
+# .dcs/content.yaml
+# Managed by DCS Portal - Do not edit manually
+# Text content for CloudSync Docs
+
+version: 1
+lastUpdated: "2026-01-06T00:00:00Z"
+updatedBy: "initial-setup"
+
+global:
+  nav.home: Home
+  nav.guide: Guide
+  nav.api: API Reference
+  nav.changelog: Changelog
+  footer.copyright: © 2026 CloudSync Inc. All rights reserved.
+
+pages:
+  home:
+    hero.title: Cloud Sync Made Simple
+    hero.subtitle: The modern cloud synchronization platform for teams. Real-time collaboration, version control, and seamless integrations.
+    hero.cta: Get Started
+    hero.secondary: View Documentation
+    features.realtime.title: Real-time Sync
+    features.realtime.description: Changes sync instantly across all devices. No more manual uploads or waiting for background processes.
+    features.collab.title: Team Collaboration
+    features.collab.description: Built-in commenting, presence indicators, and conflict resolution for seamless teamwork.
+    features.security.title: Enterprise Security
+    features.security.description: End-to-end encryption, SSO support, and granular access controls to protect your data.
+    features.api.title: Powerful API
+    features.api.description: RESTful API and webhooks for seamless integration with your existing workflow.
+    testimonial.quote: "CloudSync reduced our file management overhead by 80%. The real-time sync is a game-changer."
+    testimonial.author: "Jane Smith, CTO at TechCorp"
+  
+  guide:
+    intro.title: What is CloudSync?
+    intro.description: CloudSync is a modern cloud synchronization platform designed for teams who need reliable, real-time file synchronization with powerful collaboration features.
+    getting-started.title: Getting Started
+    getting-started.step1: Create your CloudSync account
+    getting-started.step2: Install the desktop client
+    getting-started.step3: Choose your sync folder
+    getting-started.step4: Start syncing!
+  
+  api:
+    overview.title: API Overview
+    overview.description: The CloudSync API is organized around REST. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.
+    auth.title: Authentication
+    auth.description: The CloudSync API uses API keys to authenticate requests. You can view and manage your API keys in the CloudSync Dashboard.
+  
+  changelog:
+    title: Changelog
+    v250.date: January 2026
+    v250.title: v2.5.0 - Real-time Presence
+    v250.feature1: Real-time presence indicators show who's viewing files
+    v250.feature2: New conflict resolution UI for handling merge conflicts
+    v250.feature3: Improved sync performance for large files
+    v240.date: December 2025
+    v240.title: v2.4.0 - Webhooks
+    v240.feature1: Custom webhooks for sync events
+    v240.feature2: Enhanced security with HMAC verification
