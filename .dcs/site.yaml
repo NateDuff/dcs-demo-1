@@ -1,0 +1,10 @@
+# DCS Site Configuration
+# This file configures the integration between this site and DCS Portal
+
+site_slug: demo
+site_name: VitePress Demo Site
+storage_account: stdemositeone
+output_location: docs/.vitepress/dist
+
+# Site hosting (static blob storage for demo sites)
+production_url: https://stdemositeone.z22.web.core.windows.net/
