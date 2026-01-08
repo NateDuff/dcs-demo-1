@@ -8,7 +8,7 @@ updatedBy: "initial-setup"
 
 global:
   siteName: CloudSync Docs
-  siteUrl: https://demo-2.duffcloudservices.com
+  siteUrl: https://demo.duffcloudservices.com
   locale: en_US
   defaultTitle: CloudSync Documentation
   defaultDescription: Documentation for CloudSync - the modern cloud synchronization platform for teams.
@@ -19,8 +19,8 @@ global:
     github: "cloudsync"
 
   images:
-    logo: https://demo-2.duffcloudservices.com/logo.svg
-    ogDefault: https://demo-2.duffcloudservices.com/og-image.jpg
+    logo: https://demo.duffcloudservices.com/logo.svg
+    ogDefault: https://demo.duffcloudservices.com/og-image.jpg
 
   robots: "index, follow"
 
@@ -29,7 +29,7 @@ global:
       properties:
         name: CloudSync Documentation
         description: Official documentation for CloudSync cloud synchronization platform.
-        url: https://demo-2.duffcloudservices.com
+        url: https://demo.duffcloudservices.com
 
 pages:
   home:
