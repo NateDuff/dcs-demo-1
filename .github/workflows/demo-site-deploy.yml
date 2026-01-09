@@ -130,31 +130,28 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-1.49.0
-          restore-keys: |
-            ${{ runner.os }}-playwright-
-
-      - name: Install Playwright
-        run: npx playwright install chromium --with-deps
+      - name: Install DCS CLI and Playwright
+        run: |
+          npm install -g @duffcloudservices/cli@latest
+          npx playwright install chromium --with-deps
+          echo "DCS CLI version: $(dcs --version)"
 
       - name: Capture page snapshots
-        env:
-          SITE_PREVIEW_URL: ${{ needs.deploy.outputs.deployment_url }}
-          SNAPSHOT_OUTPUT: ./snapshots
-          PAGES_CONFIG: ./.dcs/pages.yaml
         run: |
-          echo "Capturing snapshots from: $SITE_PREVIEW_URL"
+          SITE_URL="${{ needs.deploy.outputs.deployment_url }}"
+          echo "Capturing snapshots from: $SITE_URL"
           
+          # Use local capture script if it exists, otherwise use DCS CLI
           if [ -f "scripts/capture-snapshots.ts" ]; then
+            echo "Using custom capture script"
             npx tsx scripts/capture-snapshots.ts
           else
-            echo "::notice::No capture script found, skipping snapshots"
-            mkdir -p ./snapshots/demo
+            echo "Using DCS CLI for snapshot capture"
+            dcs capture-snapshots --target . --base-url "$SITE_URL" --verbose
           fi
+          
+          echo "Snapshot capture complete"
+          ls -la ./snapshots/demo 2>/dev/null || echo "No snapshots directory yet"
 
       - name: Azure Login (OIDC)
         uses: azure/login@v2
