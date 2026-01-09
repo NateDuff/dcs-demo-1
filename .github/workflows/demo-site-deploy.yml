@@ -151,7 +151,7 @@ jobs:
           fi
           
           echo "Snapshot capture complete"
-          ls -la ./snapshots/demo 2>/dev/null || echo "No snapshots directory yet"
+          ls -la .dcs/snapshots/demo 2>/dev/null || echo "No snapshots directory yet"
 
       - name: Azure Login (OIDC)
         uses: azure/login@v2
@@ -166,8 +166,8 @@ jobs:
           STORAGE_ACCOUNT="sgdcs"
           CONTAINER="site-snapshots"
           
-          if [ ! -d "./snapshots/$SITE_SLUG" ]; then
-            echo "::notice::No snapshots found at ./snapshots/$SITE_SLUG"
+          if [ ! -d ".dcs/snapshots/$SITE_SLUG" ]; then
+            echo "::notice::No snapshots found at .dcs/snapshots/$SITE_SLUG"
             exit 0
           fi
           
@@ -178,7 +178,7 @@ jobs:
             2>/dev/null || true
           
           az storage blob upload-batch \
-            --source "./snapshots/$SITE_SLUG" \
+            --source ".dcs/snapshots/$SITE_SLUG" \
             --destination "$CONTAINER/$SITE_SLUG" \
             --account-name "$STORAGE_ACCOUNT" \
             --auth-mode login \
