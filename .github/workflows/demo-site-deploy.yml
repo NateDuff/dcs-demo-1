@@ -114,7 +114,7 @@ jobs:
       - name: Set deployment URL
         id: deployment_url
         run: |
-          echo "url=https://stdemositeone.z22.web.core.windows.net/" >> $GITHUB_OUTPUT
+          echo "url=https://stdemositeone.z14.web.core.windows.net/" >> $GITHUB_OUTPUT
 
   snapshots:
     name: Capture Page Snapshots
