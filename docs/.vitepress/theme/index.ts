@@ -2,7 +2,8 @@
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 
-// Import custom components with data-section attributes
+// Import custom layout and components with data-section attributes
+import CustomLayout from './CustomLayout.vue'
 import DcsSection from './components/DcsSection.vue'
 import DcsText from './components/DcsText.vue'
 
@@ -11,6 +12,7 @@ import './custom.css'
 
 export default {
   extends: DefaultTheme,
+  Layout: CustomLayout,
   enhanceApp({ app }) {
     // Register global components for visual editor support in markdown
     app.component('DcsSection', DcsSection)
