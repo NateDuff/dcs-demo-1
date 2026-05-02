@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, postcssIsolateStyles } from 'vitepress'
 import { dcsContentPlugin, dcsSeoPlugin } from '@duffcloudservices/cms/plugins'
 
 // https://vitepress.dev/reference/site-config
@@ -93,6 +93,15 @@ export default defineConfig({
 
   // DCS CMS Integration - inject content at build time
   vite: {
+    css: {
+      postcss: {
+        plugins: [
+          postcssIsolateStyles({
+            prefix: ':not(:where(.demo-page, .demo-page *))',
+          }),
+        ],
+      },
+    },
     plugins: [
       // Type assertion needed for Vite version compatibility
       dcsContentPlugin({ contentPath: '../.dcs/content.yaml' }) as any,

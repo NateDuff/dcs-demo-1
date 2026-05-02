@@ -34,7 +34,7 @@ const features = [
 </script>
 
 <template>
-  <div class="home-page">
+  <div class="demo-page home-page">
     <!-- Hero Section -->
     <section data-section="hero" data-section-label="Hero Banner" class="hero-section">
       <div class="hero-content">
