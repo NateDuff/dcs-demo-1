@@ -9,7 +9,7 @@
     "preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@duffcloudservices/cms": "^0.3.10",
+    "@duffcloudservices/cms": "^0.6.0",
     "@unhead/vue": "^1.11.0",
     "vitepress": "^1.5.0",
     "vue": "^3.5.13"

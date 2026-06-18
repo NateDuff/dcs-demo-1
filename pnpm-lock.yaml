@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@duffcloudservices/cms':
-        specifier: ^0.3.10
-        version: 0.3.10(@unhead/vue@1.11.20(vue@3.5.33))(vue@3.5.33)
+        specifier: ^0.6.0
+        version: 0.6.0(@unhead/vue@1.11.20(vue@3.5.33))(vue@3.5.33)
       '@unhead/vue':
         specifier: ^1.11.0
         version: 1.11.20(vue@3.5.33)
@@ -146,8 +146,8 @@ packages:
   '@duffcloudservices/cms-core@0.4.3':
     resolution: {integrity: sha512-SiHS3LOrUruPSZuno+MKX+bvAsVz+GuypUYHAhvRYWDSCkK5GrqnDCg8WYZDwEc6wcw19Tae6agOGwBClLQEcA==}
 
-  '@duffcloudservices/cms@0.3.10':
-    resolution: {integrity: sha512-SHrVCcu5MEwKFkrLZUUAZDHXc/1v9Zpj3XnDyyFppyAoFVWXADeuHYKda6p72DhivYrxxFoI/uz+mtKs5+0AbQ==}
+  '@duffcloudservices/cms@0.6.0':
+    resolution: {integrity: sha512-rXwrohLuxlG9aN6prQ/n8azr5Z49pR27aUZpoOtiPlO3erg//cmBJO32vRjnXHxIlnwR/Fj3DnStu7Co76Zx4Q==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       '@unhead/vue': ^1.9.0
@@ -1010,7 +1010,7 @@ snapshots:
     dependencies:
       js-yaml: 4.1.1
 
-  '@duffcloudservices/cms@0.3.10(@unhead/vue@1.11.20(vue@3.5.33))(vue@3.5.33)':
+  '@duffcloudservices/cms@0.6.0(@unhead/vue@1.11.20(vue@3.5.33))(vue@3.5.33)':
     dependencies:
       '@duffcloudservices/cms-core': 0.4.3
       '@unhead/vue': 1.11.20(vue@3.5.33)
